@@ -1,0 +1,32 @@
+html, body {
+    height: 100%;
+}
+
+
+body {
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.board {
+    height: 300px;  
+    width: 300px;
+    background-color: turquoise ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+
+.cell {
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+}
+.cell:nth-last-child(3n) {
+    border-right: none;
+
+}
